@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var values=[1,2,3,4,'u']
+        //var values=['3', '4', '4rt', 500, false ]
+        //var values=[0, 0, -40, -50]
+        //var values=[1,2,3]
+        //var values=[undefined]
+        //var values=[null]
+        //var values=[]
+//for loop
+        var i=0;
+        let sum=0
+       
+        console.log(`Input values ${values}`)
+        console.log('---using for loop--')
+        for(i=0;i<values.length;i++){
+          if(isNaN(values[i])===true){
+            console.log('element at '+i+' is not number can not sum the values')
+          }else{
+         sum +=parseInt(values[i])  
+          }
+            console.log('index '+i+' is '+ values[i])  
+        } 
+        console.log(`Total sum is ${sum}`)
+         
+        console.log('\t ')
+        
+//while
+      let sum1=0
+    console.log('--using while loop--')
+        var i = 0;
+        while (i < values.length) {
+          if(isNaN(values[i])===true){
+            console.log('element at '+i+'is not number cannot sum the values')
+          }else{
+            sum1 +=parseInt(values[i])
+          }
+            console.log('index ' + i + " values is " + values[i]);
+            i++;
+        }
+        console.log(`Total sum is ${sum1}`)
+        console.log('\t ')
+        
+//dowhile
+        
+        console.log('--using do while--')
+        let sum2=0
+var i=0;
+        do{
+          if(isNaN(values[i])===true){
+            console.log('element at '+i+' is not number canot sum the values')
+          }else{
+            sum2+=parseInt(values[i])
+          }
+        console.log( 'index '+i+" values is"+values[i] );
+        i++
+        }
+        while(i<values.length)
+        console.log(`Total sum is${sum2}`)
+
+
+  //for each
+  
+    
+    // let sum3 = 0;
+    // console.log(`--- foreach loop--`)
+
+    //     values.forEach(function (arg,v1) {
+    //       if(isNaN(arg[i])===true){
+    //         console.log('element at '+i+' is not number canot sum the values')
+    //       }else{
+    //         sum3 += parseInt(arg)
+    //       }
+    //     });
+  
+    let sum3=0;
+    console.log('--forEach--')
+    values.forEach(function(value,ind){
+      if(isNaN(value)===true){
+        console.log(`element at ${i} is not number canot sum the values`)
+      }else{
+        sum3+=parseInt(value)
+      }
+    })
+  console.log(`sum of all elements is ${sum3}`)
+    </script>
+
+
+
+
+
+
+    </script>
+</body>
+</html>
